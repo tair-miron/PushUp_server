@@ -1,0 +1,47 @@
+Register
+
+Method: POST
+URL: http://localhost:3000/auth/register
+Body:
+{
+  "username": "user1",
+  "password": "123456"
+}
+
+Login
+Method: POST
+URL: http://localhost:3000/auth/login
+Body:
+{
+  "username": "user1",
+  "password": "123456"
+}
+
+New access with token
+Method: POST
+URL: http://localhost:3000/auth/token
+Body:
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+}
+
+Protected access
+Method: GET
+URL: http://localhost:3000/auth/protected
+Headers:
+Key: Authorization
+Value: Bearer <accessToken>
+
+Logout
+Method: DELETE
+URL: http://localhost:3000/auth/logout
+Body:
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+}
+
+
+{
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwiaWF0IjoxNzI5ODQ2NjM4LCJleHAiOjE3Mjk4NDc1Mzh9.DcaYyisxxlWAeR6hLdI4GiXz-bmDAxLfeV533M54E9s",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwiaWF0IjoxNzI5ODQ2NjM4fQ.2TmJU1E7ud03yJUOWHmUBL19lpJEhs32S4doOryNXME"
+}
