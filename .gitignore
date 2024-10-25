@@ -1,0 +1,3 @@
+
+# Exclude service account key
+config/serviceAccountKey.json
