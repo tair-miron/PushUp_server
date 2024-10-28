@@ -1,0 +1,24 @@
+send
+
+Method: POST
+URL: http://localhost:3000/notifications/send
+Body:
+{
+  "token": "DEVICE_TOKEN",
+  "title": "Notification Title",
+  "body": "Notification Body"
+}
+
+schedule
+
+Method: POST
+URL: http://localhost:3000/notifications/send
+Body:
+{
+  "token": "DEVICE_TOKEN",
+  "title": "Notification Title",
+  "body": "Notification Body",
+  "datetime": "2024-12-31T23:59:59"
+}
+
+
